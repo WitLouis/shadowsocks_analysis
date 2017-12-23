@@ -21,8 +21,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>380</y>
+      <x>70</x>
+      <y>350</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
@@ -38,8 +38,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>500</y>
+      <x>70</x>
+      <y>480</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
@@ -79,8 +79,8 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>540</x>
-      <y>350</y>
+      <x>460</x>
+      <y>490</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -90,8 +90,8 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>680</x>
-      <y>340</y>
+      <x>600</x>
+      <y>480</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -101,8 +101,8 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>900</x>
-      <y>350</y>
+      <x>820</x>
+      <y>490</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -112,8 +112,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>790</x>
-      <y>340</y>
+      <x>710</x>
+      <y>480</y>
       <w>130</w>
       <h>40</h>
     </coordinates>
@@ -124,8 +124,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>340</y>
+      <x>470</x>
+      <y>480</y>
       <w>150</w>
       <h>40</h>
     </coordinates>
@@ -136,8 +136,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>730</x>
-      <y>360</y>
+      <x>650</x>
+      <y>500</y>
       <w>200</w>
       <h>90</h>
     </coordinates>
@@ -166,5 +166,59 @@
 
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>180</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>encrypt
+--
+- key
+- method
+--
+- get_method_info()
+- iv_len()
+- get_cipher()
++ encrypt()
++ decrypt()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>200</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Crypto
+--
+- ciphter
+- key
+- iv
+- op
+--
++ updata()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>240</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+1                1</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
