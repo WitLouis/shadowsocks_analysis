@@ -57,7 +57,7 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>280</x>
+      <x>310</x>
       <y>530</y>
       <w>120</w>
       <h>40</h>
@@ -68,7 +68,7 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>280</x>
+      <x>310</x>
       <y>480</y>
       <w>120</w>
       <h>40</h>
@@ -218,7 +218,7 @@
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-1                1</panel_attributes>
+1                1  </panel_attributes>
     <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
