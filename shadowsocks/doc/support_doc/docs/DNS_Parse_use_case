@@ -1,0 +1,18 @@
+DNS 解析
+if 域名为空 then
+    退出并提示域名为空
+elif 域名已经是ip地址 then
+    直接返回结果
+elif 域名的解析结果已经存在操作系统了 then
+    直接返回结果
+elif 域名的解析结果已经缓存了 then
+    直接返回结果
+else
+    if 域名的拼写无效 then
+        直接退出并提示域名的拼写错误
+    end if
+    向DNS服务器发送DNS解析请求
+            等待DNS解析结果返回
+    返回DNS解析结果
+    关闭DNS解析请求
+end if
