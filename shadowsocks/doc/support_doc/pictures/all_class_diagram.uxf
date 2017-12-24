@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>9</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>414</x>
-      <y>72</y>
-      <w>126</w>
-      <h>234</h>
+      <x>576</x>
+      <y>168</y>
+      <w>112</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>DNSResolver
 --
@@ -32,10 +32,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>639</x>
-      <y>72</y>
-      <w>90</w>
-      <h>81</h>
+      <x>776</x>
+      <y>168</y>
+      <w>80</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>DNSResponse
 --
@@ -47,24 +47,24 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>531</x>
-      <y>99</y>
-      <w>126</w>
-      <h>45</h>
+      <x>680</x>
+      <y>192</y>
+      <w>112</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
-调用</panel_attributes>
+&lt;&lt;使用&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>531</x>
-      <y>360</y>
-      <w>126</w>
-      <h>207</h>
+      <x>680</x>
+      <y>424</y>
+      <w>112</w>
+      <h>184</h>
     </coordinates>
     <panel_attributes>EventLoop
 --
@@ -86,10 +86,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>486</x>
-      <y>297</y>
-      <w>108</w>
-      <h>81</h>
+      <x>640</x>
+      <y>368</y>
+      <w>96</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -99,27 +99,83 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>333</x>
-      <y>360</y>
-      <w>90</w>
-      <h>207</h>
+      <x>504</x>
+      <y>424</y>
+      <w>112</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>LRUCache
 --
-</panel_attributes>
+- closed_values
+- keys_to_last_time
+- last_visits
+- store
+- time_to_keys
++ close_callback
++ timeout
+--
++ sweep()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
-      <y>297</y>
-      <w>108</w>
-      <h>81</h>
+      <x>536</x>
+      <y>368</y>
+      <w>96</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=1</panel_attributes>
     <additional_attributes>100.0;10.0;100.0;60.0;10.0;60.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>232</y>
+      <w>136</w>
+      <h>312</h>
+    </coordinates>
+    <panel_attributes>UDPRelay
+--
+- cache
+- client_fd_to_server_addr
+- closed
+- config
+- dns_cache
+- dns_resolver
+- eventloop
+- is_local
+- method
+- password
+- stat_callback
+- server_socket
+- sockets
+- timeout
+--
+- close_client()
+- get_a_server()
+- handle_client()
+- handle_server()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>352</y>
+      <w>184</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=3</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;150.0</additional_attributes>
   </element>
 </diagram>
