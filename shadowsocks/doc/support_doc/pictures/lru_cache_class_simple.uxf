@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>160</y>
+      <w>140</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>DNSResolver
+--
+- cache
+- hosts
+- loop
+- server
+- sock
+--
+- handle_data()
+- handle_event()
+- parse_hosts()
+- parse_resolv()
+- send_req()
++ add_to_loop()
++ close()
++ handle_periodic()
++ resolve()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>200</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>LRUCache
+--
+- closed_values
+- keys_to_last_time
+- last_visits
+- store
+- time_to_keys
++ close_callback
++ timeout
+--
++ sweep()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>260</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>110</y>
+      <w>170</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>UDPRelay
+--
+- cache
+- client_fd_to_server_addr
+- closed
+- config
+- dns_cache
+- dns_resolver
+- eventloop
+- is_local
+- method
+- password
+- stat_callback
+- server_socket
+- sockets
+- timeout
+--
+- close_client()
+- get_a_server()
+- handle_client()
+- handle_server()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>260</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=3</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+</diagram>

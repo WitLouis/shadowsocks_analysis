@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>360</y>
+      <w>150</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Manager
+--
+- config
+- control_client_addr
+- dns_resolver
+- loop
+- relays
+- statistics
+--
+- parse_command()
+- send_control_data()
++ add_port()
++ handle_event()
++ handle_periodic()
++ remove_port()
++ run()
++ stat_callback()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1040</x>
+      <y>150</y>
+      <w>170</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>DNSResolver
+--
+- cache
+- hosts
+- loop
+- server
+- sock
+--
+- handle_data()
+- handle_event()
+- parse_hosts()
+- parse_resolv()
+- send_req()
++ add_to_loop()
++ close()
++ handle_periodic()
++ resolve()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>270</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;170.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>260</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+m1=1
+m2=1
+&lt;&lt;创建&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>70</y>
+      <w>170</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>UDPRelay
+--
+- cache
+- client_fd_to_server_addr
+- closed
+- config
+- dns_cache
+- dns_resolver
+- eventloop
+- is_local
+- method
+- password
+- stat_callback
+- server_socket
+- sockets
+- timeout
+--
+- close_client()
+- get_a_server()
+- handle_client()
+- handle_server()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>480</y>
+      <w>170</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>TCPRelay
+--
+- closed
+- config
+- dns_resolver
+- eventloop
+- fd_to_handlers
+- handler_to_timeouts
+- is_local
+- listen_port
+- stat_callback
+- server_socket
+- timeout
+- timeouts
+- timeout_offset
+--
+- sweep_timeout()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()
++ remove_handler()
++ update_activity()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>600</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+m1=1
+m2=1
+&lt;&lt;创建&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1040</x>
+      <y>480</y>
+      <w>170</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>EventLoop
+--
+- fdmap
+- impl
+- last_time
+- periodic_callbacks
+- stopping
+--
++ add()
++ add_periodic()
++ modify()
++ poll()
++ remove()
++ remove_periodic()
++ run()
++ stop()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>490</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;100.0</additional_attributes>
+  </element>
+</diagram>
