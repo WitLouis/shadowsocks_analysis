@@ -11,21 +11,21 @@
     </coordinates>
     <panel_attributes>Manager
 --
--config
--control_client_addr
--dns_resolver
--loop
--relays
--statistics
+- config
+- control_client_addr
+- dns_resolver
+- loop
+- relays
+- statistics
 --
--parse_command()
--send_control_data()
-+add_port()
-+handle_event()
-+handle_periodic()
-+remove_port()
-+run()
-+stat_callback()</panel_attributes>
+- parse_command()
+- send_control_data()
++ add_port()
++ handle_event()
++ handle_periodic()
++ remove_port()
++ run()
++ stat_callback()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -38,21 +38,21 @@
     </coordinates>
     <panel_attributes>DNSResolver
 --
--cache
--hosts
--loop
--server
--sock
+- cache
+- hosts
+- loop
+- server
+- sock
 --
--handle_data()
--handle_event()
--parse_hosts()
--parse_resolv()
--send_req()
-+add_to_loop()
-+close()
-+handle_periodic()
-+resolve()</panel_attributes>
+- handle_data()
+- handle_event()
+- parse_hosts()
+- parse_resolv()
+- send_req()
++ add_to_loop()
++ close()
++ handle_periodic()
++ resolve()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -61,10 +61,12 @@
       <x>850</x>
       <y>270</y>
       <w>210</w>
-      <h>210</h>
+      <h>190</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>190.0;10.0;10.0;190.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;170.0;190.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -72,10 +74,13 @@
       <x>530</x>
       <y>260</y>
       <w>200</w>
-      <h>270</h>
+      <h>130</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..</panel_attributes>
-    <additional_attributes>10.0;10.0;180.0;250.0</additional_attributes>
+    <panel_attributes>lt=&lt;..
+m1=1
+m2=1
+&lt;&lt;创建&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;110.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -87,29 +92,29 @@
     </coordinates>
     <panel_attributes>UDPRelay
 --
--cache
--client_fd_to_server_addr
--closed
--config
--dns_cache
--dns_resolver
--eventloop
--is_local
--method
--password
--stat_callback
--server_socket
--sockets
--timeout
+- cache
+- client_fd_to_server_addr
+- closed
+- config
+- dns_cache
+- dns_resolver
+- eventloop
+- is_local
+- method
+- password
+- stat_callback
+- server_socket
+- sockets
+- timeout
 --
--close_client()
--get_a_server()
--handle_client()
--handle_server()
-+add_to_loop()
-+close()
-+handle_event()
-+handle_periodic()</panel_attributes>
+- close_client()
+- get_a_server()
+- handle_client()
+- handle_server()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -122,39 +127,42 @@
     </coordinates>
     <panel_attributes>TCPRelay
 --
--closed
--config
--dns_resolver
--eventloop
--fd_to_handlers
--handler_to_timeouts
--is_local
--listen_port
--stat_callback
--server_socket
--timeout
--timeouts
--timeout_offset
+- closed
+- config
+- dns_resolver
+- eventloop
+- fd_to_handlers
+- handler_to_timeouts
+- is_local
+- listen_port
+- stat_callback
+- server_socket
+- timeout
+- timeouts
+- timeout_offset
 --
--sweep_timeout()
-+add_to_loop()
-+close()
-+handle_event()
-+handle_periodic()
-+remove_handler()
-+update_activity()</panel_attributes>
+- sweep_timeout()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()
++ remove_handler()
++ update_activity()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>530</x>
-      <y>540</y>
+      <y>600</y>
       <w>200</w>
-      <h>170</h>
+      <h>110</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..</panel_attributes>
-    <additional_attributes>10.0;150.0;180.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;..
+m1=1
+m2=1
+&lt;&lt;创建&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;180.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -164,33 +172,35 @@
       <w>170</w>
       <h>250</h>
     </coordinates>
-    <panel_attributes>DNSResolver
+    <panel_attributes>EventLoop
 --
--fdmap
--impl
--last_time
--periodic_callbacks
--stopping
+- fdmap
+- impl
+- last_time
+- periodic_callbacks
+- stopping
 --
-+add()
-+add_periodic()
-+modify()
-+poll()
-+remove()
-+remove_periodic()
-+run()
-+stop()</panel_attributes>
++ add()
++ add_periodic()
++ modify()
++ poll()
++ remove()
++ remove_periodic()
++ run()
++ stop()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>850</x>
-      <y>540</y>
+      <y>490</y>
       <w>210</w>
-      <h>110</h>
+      <h>120</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>190.0;90.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;100.0</additional_attributes>
   </element>
 </diagram>

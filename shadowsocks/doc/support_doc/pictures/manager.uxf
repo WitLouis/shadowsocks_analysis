@@ -51,11 +51,11 @@ bg=white</panel_attributes>
     <coordinates>
       <x>420</x>
       <y>200</y>
-      <w>90</w>
+      <w>70</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
+&lt;&lt;包含&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -111,7 +111,7 @@ bg=white</panel_attributes>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
+&lt;&lt;包含&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;80.0;170.0;10.0</additional_attributes>
   </element>
   <element>
@@ -119,11 +119,11 @@ bg=white</panel_attributes>
     <coordinates>
       <x>350</x>
       <y>280</y>
-      <w>110</w>
+      <w>90</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
+&lt;&lt;包含&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;60.0;50.0;10.0</additional_attributes>
   </element>
   <element>
@@ -131,11 +131,11 @@ bg=white</panel_attributes>
     <coordinates>
       <x>460</x>
       <y>280</y>
-      <w>110</w>
+      <w>90</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
+&lt;&lt;包含&gt;&gt;</panel_attributes>
     <additional_attributes>50.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -158,7 +158,7 @@ bg=white</panel_attributes>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
+&lt;&lt;包含&gt;&gt;</panel_attributes>
     <additional_attributes>200.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -210,11 +210,11 @@ bg=white</panel_attributes>
     <coordinates>
       <x>490</x>
       <y>470</y>
-      <w>120</w>
+      <w>130</w>
       <h>60</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>100.0;10.0;10.0;40.0</additional_attributes>
+    <additional_attributes>110.0;10.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -225,7 +225,7 @@ bg=white</panel_attributes>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
+&lt;&lt;包含&gt;&gt;</panel_attributes>
     <additional_attributes>160.0;10.0;10.0;70.0</additional_attributes>
   </element>
 </diagram>
