@@ -138,7 +138,7 @@ class Manager(object):
     def handle_event(self, sock, fd, event):
 
         """
-        处理事件，根据端口号读取监听到的数据，从中读取控制指令，更新配置信息，处理相应的控制指令
+        处理触发事件，根据端口号读取监听到的数据，从中读取命令，更新配置信息，处理相应的命令
 
         :param sock: 监听到信息的端口号
 
@@ -214,7 +214,7 @@ class Manager(object):
     def handle_periodic(self):
 
         """
-        当统计发送数据量到达限制后，发送数据
+        周期性地向客户端发送接收到数据的总长度
 
         :return: 无
         """
@@ -242,7 +242,7 @@ class Manager(object):
     def _send_control_data(self, data):
 
         """
-        向客户端发送数据
+        根据客户端地址，向对应的客户端发送数据
 
         :param data: 发送数据
 
@@ -265,7 +265,7 @@ class Manager(object):
     def run(self):
 
         """
-        运行端口管理程序
+        运行服务端管理的IO复用模式
 
         :return: 无
         """
@@ -275,12 +275,6 @@ class Manager(object):
 
 def run(config):
 
-    """
-    传入配置参数，运行端口管理程序
-
-    :return: 无
-    """
-    
     Manager(config).run()
 
 
