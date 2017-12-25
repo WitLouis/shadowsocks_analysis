@@ -1,0 +1,9 @@
+IO复用
+启动IO复用
+while(1)
+    if 有新的监听对象 then
+        添加新的监听对象
+    end if
+    if 监听到新的活动 then
+        提示活动的目标对象处理该事件
+    end if

@@ -33,7 +33,11 @@ import time
 
 class LRUCache(collections.MutableMapping):
     """This class is not thread safe"""
-
+    
+    """
+    清除最近最久未使用的缓存数据
+    """
+    
     def __init__(self, timeout=60, close_callback=None, *args, **kwargs):
         """
         初始化整个类的参数
@@ -162,11 +166,7 @@ class LRUCache(collections.MutableMapping):
 
 
 def test():
-    """
-    测试代码
-
-    :return: 无
-    """
+    
     c = LRUCache(timeout=0.3)
 
     c['a'] = 1

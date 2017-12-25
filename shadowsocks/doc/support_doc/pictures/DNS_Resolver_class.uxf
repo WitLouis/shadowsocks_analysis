@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>72</y>
+      <w>126</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>DNSResolver
+--
+- cache
+- hosts
+- loop
+- server
+- sock
+--
+- parse_hosts()
+- parse_resolv()
+- handle_data()
+- handle_event()
+- send_req()
++ add_to_loop()
++ close()
++ handle_periodic()
++ resolve()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>639</x>
+      <y>72</y>
+      <w>90</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>DNSResponse
+--
++ answers
++ hostname
++ question</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>99</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+调用</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>531</x>
+      <y>360</y>
+      <w>126</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>EventLoop
+--
+- fdmap
+- last_time
+- periodic_callbacks
+- stopping
+--
++ add()
++ add_periodic()
++ modify()
++ poll()
++ remove()
++ remove_periodic()
++ run()
++ stop()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>297</y>
+      <w>108</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;100.0;50.0;100.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>333</x>
+      <y>360</y>
+      <w>90</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>LRUCache
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>297</y>
+      <w>108</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;60.0;10.0;60.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>

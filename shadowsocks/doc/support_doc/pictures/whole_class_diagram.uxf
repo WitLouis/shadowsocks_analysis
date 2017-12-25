@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>266</y>
+      <w>98</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>DNSResolver
+--
+- cache
+- cb_to_hostanme
+- hostname_to_cb
+- hosts
+- loop
+- server
+- sock
+--
+- parse_hosts()
+- parse_resolv()
+- handle_data()
+- handle_event()
+- send_req()
++ add_to_loop()
++ close()
++ handle_periodic()
++ resolve()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>539</x>
+      <y>287</y>
+      <w>70</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>DNSResponse
+--
++ answers
++ hostname
++ question</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>483</x>
+      <y>308</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt;&lt;使用&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>462</y>
+      <w>98</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>EventLoop
+--
+- fdmap
+- last_time
+- periodic_callbacks
+- stopping
+--
++ add()
++ add_periodic()
++ modify()
++ poll()
++ remove()
++ remove_periodic()
++ run()
++ stop()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>420</y>
+      <w>126</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>160.0;10.0;130.0;10.0;130.0;120.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>427</x>
+      <y>532</y>
+      <w>98</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>LRUCache
+--
+- closed_values
+- keys_to_last_time
+- last_visits
+- store
+- time_to_keys
++ close_callback
++ timeout
+--
++ sweep()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>455</x>
+      <y>462</y>
+      <w>21</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>574</x>
+      <y>371</y>
+      <w>119</w>
+      <h>273</h>
+    </coordinates>
+    <panel_attributes>UDPRelay
+--
+- cache
+- client_fd_to_server_addr
+- closed
+- config
+- dns_cache
+- dns_resolver
+- eventloop
+- is_local
+- method
+- password
+- stat_callback
+- server_socket
+- sockets
+- timeout
+--
+- close_client()
+- get_a_server()
+- handle_client()
+- handle_server()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>518</x>
+      <y>560</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=3</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>7</y>
+      <w>126</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Local
+--
+- config
+- dns_resolver
+- tcp_relay
+- udp_relay
+--
+- extract_config
++ run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>182</x>
+      <y>196</y>
+      <w>119</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>TCPRelay
+--
+- config
+- closed
+- dns_resolver
+- fd_to_handlers
+- eventloop
+- listen
+- server_socket
+- stat_callback
+- timeouts
+--
+- sweep_timeout()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()
++ remove_handler()
++ update_activity()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>245</x>
+      <y>91</y>
+      <w>21</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>14</y>
+      <w>315</w>
+      <h>371</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;430.0;10.0;430.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>91</y>
+      <w>98</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0;120.0;180.0;120.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>476</x>
+      <y>84</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Daemon
+--
+- config
+--
++ exec()
++ start()
++ stop()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>28</y>
+      <w>203</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extend&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0;270.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>392</y>
+      <w>21</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>0</y>
+      <w>133</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Shell
+--
+
+--
++ check_config()
++ get_config()
++ print_help()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>182</x>
+      <y>14</y>
+      <w>56</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+调用</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

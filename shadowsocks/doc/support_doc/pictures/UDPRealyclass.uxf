@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>406</x>
+      <y>350</y>
+      <w>126</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>UDPRealy
+--
+- cache
+- closed
+- client_fd_to_server_addr
+- config
+- dns_resolver
+- dns_cache
+- eventloop
+- listen
+- method
+- password
+- remote
+- stat_callback
+- sockets
+- server_socket
+- timeout
+--
+- close_client()
+- get_a_server()
+- handle_client()
+- handle_server()
++ add_to_loop()
++ close()
++ handle_event()
++ handle_periodic()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>196</y>
+      <w>189</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>250.0;220.0;250.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>196</y>
+      <w>21</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>308</y>
+      <w>126</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=3</panel_attributes>
+    <additional_attributes>160.0;60.0;160.0;10.0;10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>259</x>
+      <y>0</y>
+      <w>98</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>DNSResolver
+--
+- cache
+- cb_to_hostanme
+- hostname_to_cb
+- hosts
+- loop
+- server
+- sock
+--
+- parse_hosts()
+- parse_resolv()
+- handle_data()
+- handle_event()
+- send_req()
++ add_to_loop()
++ close()
++ handle_periodic()
++ resolve()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>273</x>
+      <y>350</y>
+      <w>98</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>LRUCache
+--
+- closed_values
+- keys_to_last_time
+- last_visits
+- store
+- time_to_keys
++ close_callback
++ timeout
+--
++ sweep()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>42</y>
+      <w>98</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>EventLoop
+--
+- fdmap
+- last_time
+- periodic_callbacks
+- stopping
+--
++ add()
++ add_periodic()
++ modify()
++ poll()
++ remove()
++ remove_periodic()
++ run()
++ stop()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

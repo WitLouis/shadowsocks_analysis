@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>390</x>
+      <y>160</y>
+      <w>150</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>服务器
+-
+DNSResovler()
+Encryptor()
+Eventloop()
+IPNetwork()
+LRUCache()
+Manager()
+Server()
+TCPRelay()
+TCPRelayHandler()
+UDPRelay()
+halign=left
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>480</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>370</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+</diagram>
