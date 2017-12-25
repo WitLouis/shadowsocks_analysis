@@ -211,9 +211,9 @@ def encrypt_all(password, method, op, data):
     """
     加密算法加密
 
-    :param password: 加密算法
+    :param password: 密码，用于生成密钥
 
-    :param method: 用于生成key
+    :param method: 加密算法
 
     :param op: 操作标识，op=1加密，op=0解密
 
