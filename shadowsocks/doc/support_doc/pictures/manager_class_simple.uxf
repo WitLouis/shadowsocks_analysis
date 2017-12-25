@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>360</y>
-      <w>150</w>
-      <h>260</h>
+      <x>712</x>
+      <y>376</y>
+      <w>120</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>Manager
 --
@@ -31,10 +31,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1040</x>
-      <y>150</y>
-      <w>170</w>
-      <h>260</h>
+      <x>976</x>
+      <y>208</y>
+      <w>136</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>DNSResolver
 --
@@ -58,10 +58,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>850</x>
-      <y>270</y>
-      <w>210</w>
-      <h>190</h>
+      <x>824</x>
+      <y>304</y>
+      <w>168</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -71,10 +71,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>260</y>
-      <w>200</w>
-      <h>130</h>
+      <x>568</x>
+      <y>296</y>
+      <w>160</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
 m1=1
@@ -85,10 +85,10 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>70</y>
-      <w>170</w>
-      <h>390</h>
+      <x>440</x>
+      <y>144</y>
+      <w>136</w>
+      <h>312</h>
     </coordinates>
     <panel_attributes>UDPRelay
 --
@@ -120,10 +120,10 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>480</y>
-      <w>170</w>
-      <h>360</h>
+      <x>440</x>
+      <y>472</y>
+      <w>136</w>
+      <h>288</h>
     </coordinates>
     <panel_attributes>TCPRelay
 --
@@ -153,10 +153,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>600</y>
-      <w>200</w>
-      <h>110</h>
+      <x>568</x>
+      <y>568</y>
+      <w>160</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
 m1=1
@@ -167,10 +167,10 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1040</x>
-      <y>480</y>
-      <w>170</w>
-      <h>250</h>
+      <x>976</x>
+      <y>472</y>
+      <w>136</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>EventLoop
 --
@@ -193,10 +193,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>850</x>
-      <y>490</y>
-      <w>210</w>
-      <h>120</h>
+      <x>824</x>
+      <y>480</y>
+      <w>168</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1

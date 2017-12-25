@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>7</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>728</x>
-      <y>357</y>
-      <w>98</w>
-      <h>203</h>
+      <x>664</x>
+      <y>344</y>
+      <w>112</w>
+      <h>232</h>
     </coordinates>
     <panel_attributes>DNSResolver
 --
@@ -34,10 +34,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>875</x>
-      <y>378</y>
-      <w>70</w>
-      <h>63</h>
+      <x>832</x>
+      <y>368</y>
+      <w>80</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>DNSResponse
 --
@@ -49,10 +49,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>399</y>
-      <w>70</w>
-      <h>35</h>
+      <x>768</x>
+      <y>392</y>
+      <w>80</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -63,10 +63,10 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>525</x>
-      <y>553</y>
-      <w>98</w>
-      <h>161</h>
+      <x>432</x>
+      <y>568</y>
+      <w>112</w>
+      <h>184</h>
     </coordinates>
     <panel_attributes>EventLoop
 --
@@ -88,10 +88,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>511</y>
-      <w>126</w>
-      <h>105</h>
+      <x>536</x>
+      <y>520</y>
+      <w>144</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -101,10 +101,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>763</x>
-      <y>623</y>
-      <w>98</w>
-      <h>119</h>
+      <x>704</x>
+      <y>648</y>
+      <w>112</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>LRUCache
 --
@@ -122,10 +122,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>791</x>
-      <y>553</y>
-      <w>21</w>
-      <h>84</h>
+      <x>736</x>
+      <y>568</y>
+      <w>24</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -135,10 +135,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>462</y>
-      <w>119</w>
-      <h>273</h>
+      <x>872</x>
+      <y>464</y>
+      <w>136</w>
+      <h>312</h>
     </coordinates>
     <panel_attributes>UDPRelay
 --
@@ -170,10 +170,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>854</x>
-      <y>651</y>
-      <w>70</w>
-      <h>28</h>
+      <x>808</x>
+      <y>680</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -183,10 +183,10 @@ m2=3</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
-      <y>98</y>
-      <w>126</w>
-      <h>91</h>
+      <x>472</x>
+      <y>48</y>
+      <w>144</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>Server
 --
@@ -195,16 +195,17 @@ m2=3</panel_attributes>
 - tcp_relay
 - udp_relay
 --
+- extract_config()
 + run()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>364</y>
-      <w>133</w>
-      <h>378</h>
+      <x>216</x>
+      <y>352</y>
+      <w>152</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>TCPRelayHandler
 --
@@ -245,10 +246,10 @@ m2=3</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>518</x>
-      <y>287</y>
-      <w>119</w>
-      <h>203</h>
+      <x>424</x>
+      <y>264</y>
+      <w>136</w>
+      <h>232</h>
     </coordinates>
     <panel_attributes>TCPRelay
 --
@@ -275,10 +276,10 @@ m2=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
-      <y>399</y>
-      <w>70</w>
-      <h>28</h>
+      <x>360</x>
+      <y>392</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -288,10 +289,10 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>581</x>
-      <y>182</y>
-      <w>21</w>
-      <h>119</h>
+      <x>496</x>
+      <y>144</y>
+      <w>24</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -301,10 +302,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>679</x>
-      <y>105</y>
-      <w>315</w>
-      <h>371</h>
+      <x>608</x>
+      <y>56</y>
+      <w>360</w>
+      <h>424</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -314,10 +315,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>665</x>
-      <y>182</y>
-      <w>98</w>
-      <h>189</h>
+      <x>592</x>
+      <y>144</y>
+      <w>112</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -327,10 +328,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>812</x>
-      <y>175</y>
-      <w>147</w>
-      <h>91</h>
+      <x>760</x>
+      <y>136</y>
+      <w>168</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>Daemon
 --
@@ -344,10 +345,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>189</y>
-      <w>133</w>
-      <h>105</h>
+      <x>216</x>
+      <y>152</y>
+      <w>152</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Encryptor
 --
@@ -366,43 +367,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>287</y>
-      <w>21</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>343</x>
-      <y>35</y>
-      <w>119</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>Crypto
---
-- ciphter
-- key
-- iv
-- op
---
-+ update()
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>385</x>
-      <y>112</y>
-      <w>21</w>
-      <h>91</h>
+      <x>280</x>
+      <y>264</y>
+      <w>24</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -412,10 +380,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>679</x>
-      <y>119</y>
-      <w>203</w>
-      <h>70</h>
+      <x>608</x>
+      <y>72</y>
+      <w>232</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extend&gt;&gt;</panel_attributes>
@@ -424,10 +392,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>483</y>
-      <w>21</w>
-      <h>84</h>
+      <x>480</x>
+      <y>488</y>
+      <w>24</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -437,10 +405,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
-      <y>609</y>
-      <w>77</w>
-      <h>28</h>
+      <x>360</x>
+      <y>632</y>
+      <w>88</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -450,10 +418,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>651</x>
-      <y>777</y>
-      <w>105</w>
-      <h>182</h>
+      <x>576</x>
+      <y>824</y>
+      <w>120</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>Manager
 --
@@ -477,10 +445,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>707</y>
-      <w>98</w>
-      <h>182</h>
+      <x>480</x>
+      <y>744</y>
+      <w>112</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -490,10 +458,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>735</x>
-      <y>553</y>
-      <w>21</w>
-      <h>238</h>
+      <x>672</x>
+      <y>568</y>
+      <w>24</w>
+      <h>272</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -503,10 +471,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>609</x>
-      <y>483</y>
-      <w>91</w>
-      <h>308</h>
+      <x>528</x>
+      <y>488</y>
+      <w>104</w>
+      <h>352</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
 m1=1
@@ -517,15 +485,46 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>749</x>
-      <y>728</y>
-      <w>196</w>
-      <h>126</h>
+      <x>688</x>
+      <y>768</y>
+      <w>224</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
 m1=1
 m2=1
 &lt;&lt;创建&gt;&gt;</panel_attributes>
     <additional_attributes>260.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>48</y>
+      <w>152</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Shell
+--
+
+--
++ check_config()
++ get_config()
++ print_help()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>64</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+调用</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
