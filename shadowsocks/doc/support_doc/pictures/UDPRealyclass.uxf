@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>406</x>
-      <y>308</y>
+      <x>315</x>
+      <y>140</y>
       <w>126</w>
       <h>294</h>
     </coordinates>
@@ -41,8 +41,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>329</x>
-      <y>511</y>
+      <x>238</x>
+      <y>343</y>
       <w>91</w>
       <h>28</h>
     </coordinates>
@@ -54,8 +54,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
-      <y>364</y>
+      <x>434</x>
+      <y>196</y>
       <w>91</w>
       <h>35</h>
     </coordinates>
@@ -68,8 +68,8 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>329</x>
-      <y>364</y>
+      <x>238</x>
+      <y>196</y>
       <w>91</w>
       <h>28</h>
     </coordinates>
@@ -81,8 +81,8 @@ m2=3</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>441</y>
+      <x>147</x>
+      <y>273</y>
       <w>98</w>
       <h>203</h>
     </coordinates>
@@ -111,8 +111,8 @@ m2=3</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>308</y>
+      <x>147</x>
+      <y>140</y>
       <w>98</w>
       <h>119</h>
     </coordinates>
@@ -132,8 +132,8 @@ m2=3</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>602</x>
-      <y>294</y>
+      <x>511</x>
+      <y>126</y>
       <w>98</w>
       <h>161</h>
     </coordinates>
