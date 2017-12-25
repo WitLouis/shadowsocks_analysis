@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>70</x>
-      <y>40</y>
+      <y>60</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
@@ -22,7 +22,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>70</x>
-      <y>350</y>
+      <y>360</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
@@ -39,7 +39,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>70</x>
-      <y>480</y>
+      <y>490</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
@@ -58,28 +58,6 @@
     <id>UMLClass</id>
     <coordinates>
       <x>70</x>
-      <y>160</y>
-      <w>170</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>Encryptor
---
-- key
-- method
---
-- get_method_info()
-- iv_len()
-- get_cipher()
-+ encrypt()
-+ decrypt()
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>750</x>
       <y>180</y>
       <w>170</w>
       <h>150</h>
@@ -101,8 +79,30 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
-      <y>200</y>
+      <x>590</x>
+      <y>300</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Encryptor
+--
+- key
+- method
+--
+- get_method_info()
+- iv_len()
+- get_cipher()
++ encrypt()
++ decrypt()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>320</y>
       <w>170</w>
       <h>120</h>
     </coordinates>
@@ -121,13 +121,76 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>620</x>
-      <y>240</y>
-      <w>150</w>
+      <x>490</x>
+      <y>360</y>
+      <w>120</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 1                1  </panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>80</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>TCPRelayHandler
+--
+
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>220</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+1
+
+
+1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>440</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+1
+
+1</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>500</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>shell
+--
+
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
